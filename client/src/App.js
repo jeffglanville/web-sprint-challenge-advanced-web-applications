@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <nav className="nav">
-        <Link to="/logoff">Logoff</Link>
+        <Link to="/logoff"><button className="logoff">Logoff</button></Link>
       </nav>
       <div className="App">
         <Route exact path="/" component={Login} />
