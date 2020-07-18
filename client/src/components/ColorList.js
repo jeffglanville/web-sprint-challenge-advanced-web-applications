@@ -28,7 +28,7 @@ const ColorList = ({ colors, updateColors }) => {
 
   const deleteColor = color => {
     axiosWithAuth()
-    .delete(`http://localhost:5000/api/colors/${color.id}`)
+    .delete(`api/colors/${color.id}`)
     .then(updateColors([...colors.filter(e => e.id !== color.id)]))
     .catch(err => console.log("Err is:", err));
   };
@@ -40,10 +40,10 @@ const ColorList = ({ colors, updateColors }) => {
         {colors.map(color => (
           <li key={color.color} onClick={() => editColor(color)}>
             <span>
-              <span className="delete" onClick={() =>
-
+              <span className="delete" onClick={e => {
+                e.stopPropagation();
                 deleteColor(color)
-
+              }
                 }>
                   x
               </span>{" "}
