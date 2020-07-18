@@ -1,6 +1,6 @@
 import React from "react";
 import { axiosWithAuth } from '../utils/axiosWithAuth';
-import './Login.scss';
+
 
 class Login extends React.Component {
   state = {
