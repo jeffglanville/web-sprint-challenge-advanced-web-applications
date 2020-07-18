@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./ContactPage.scss";
 
 class ContactPage extends React.Component {
     state = {
