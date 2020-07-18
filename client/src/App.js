@@ -15,7 +15,7 @@ function App() {
     <Router>
       <nav className="nav">
         <Link to="/logoff"><button className="logoff">Logoff</button></Link>
-        <Link to="/contactpage"><button>Click Here to enter your details</button></Link>
+
       </nav>
       <div className="App">
         <Route exact path="/" component={Login} />

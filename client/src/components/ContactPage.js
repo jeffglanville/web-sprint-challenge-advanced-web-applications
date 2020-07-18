@@ -1,5 +1,5 @@
 import React from "react";
-import { axiosWithAuth } from "../utils/axiosWithAuth"
+
 
 class ContactPage extends React.Component {
     state = {
@@ -23,8 +23,9 @@ class ContactPage extends React.Component {
         return (
             <div>
             <h1>Visitor Information:</h1>
-            <form>
+            <form className="contact">
                 <input
+                    id="input"
                     type="text"
                     name="name"
                     value={this.state.visitor.name}
@@ -32,6 +33,7 @@ class ContactPage extends React.Component {
                     onChange={this.handleChange}
                 />
                 <input
+                    id="input"
                     type="text"
                     name="email"
                     value={this.state.visitor.email}
@@ -39,6 +41,7 @@ class ContactPage extends React.Component {
                     onChange={this.handleChange}
                 />
                 <input
+                    id="input"
                     type="text"
                     name="comments"
                     value={this.state.visitor.comment}
