@@ -1,0 +1,26 @@
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #input {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 3px 2px #1a535c;
+        margin: 10px;
+        font-size: larger;
+        width: 75%;
+        height: 5vh;
+    }
+
+    button {
+        align-items: center;
+        width: 80%;
+        height: 5vh;
+        border-radius: 10px;
+        background-color: dodgerblue;
+        color: white;
+        margin-left: 5px;
+    }
+}
